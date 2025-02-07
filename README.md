@@ -4,6 +4,8 @@ This script generates a JSON report based on the sessions data.
 
 ## Setup
 
+Make sure you have npm installed on your machine.
+
 ```bash
 npm install
 ```
