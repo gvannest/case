@@ -1,7 +1,7 @@
 
 export class FlowsAnalyzer {
   constructor() {
-    this.sessionEvents = new Map();
+    this.sessionEvents = new Map(); // in production this would be an external nosql database, key / value
     this.mostMeaningfulFlows = [];
     this.totalNumberOfFlows = 0;
     this.visitsPerPage = new Map();
@@ -19,7 +19,7 @@ export class FlowsAnalyzer {
 
   analyzeFlows() {
     const checkoutFlow = {
-      title: 'Purchase path',
+      title: 'Purchase flow',
       description: 'The path a customer takes to purchase a product',
       numberOfFlows: 0,
     };

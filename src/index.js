@@ -7,6 +7,10 @@ import { generateReport, printReport } from "./report-generation.js";
 
 
 function main(filePath) {
+    if (!filePath) {
+        console.error('Please provide a file path');
+        return;
+    }
     const flowsAnalyzer = new FlowsAnalyzer();
     const anomaliesAnalyzer = new AnomaliesAnalyzer();
 

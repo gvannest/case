@@ -1,4 +1,5 @@
 export class AnomaliesAnalyzer {
+
   constructor() {
     this.anomalies = [];
     this.totalNumberOfAnomalies = 0;
